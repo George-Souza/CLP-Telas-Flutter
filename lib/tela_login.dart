@@ -1,6 +1,8 @@
 // lib/tela1.dart
 
 import 'package:flutter/material.dart';
+import 'tela_cadastro.dart';
+import 'tela_saudacao.dart';
 
 class TelaLogin extends StatefulWidget {
   @override
@@ -21,7 +23,7 @@ class _Tela1State extends State<TelaLogin> {
       // Redirecionar para a Tela de Sucesso ou a Tela Principal
       Navigator.pushReplacement(
         context,
-        MaterialPageRoute(builder: (context) => TelaDeSucesso()), // Substitua pela tela de sucesso
+        MaterialPageRoute(builder: (context) => TelaSaudacao()), // Substitua pela tela de sucesso
       );
     } else {
       // Exibir um erro se as credenciais forem inválidas
@@ -91,6 +93,10 @@ class _Tela1State extends State<TelaLogin> {
             TextButton(
               onPressed: () {
                 // Ação ao clicar no botão de cadastro
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => TelaCadastro()),
+                );
               },
               child: Text('ou cadastre-se na plataforma'),
             ),
