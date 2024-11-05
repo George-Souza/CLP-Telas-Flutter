@@ -23,7 +23,7 @@ class _Tela1State extends State<TelaLogin> {
       // Redirecionar para a Tela de Sucesso ou a Tela Principal
       Navigator.pushReplacement(
         context,
-        MaterialPageRoute(builder: (context) => TelaSaudacao()), // Substitua pela tela de sucesso
+        MaterialPageRoute(builder: (context) => TelaSaudacao(nomeUsuario: 'User', saldo: 2000.0)), // Substitua pela tela de sucesso
       );
     } else {
       // Exibir um erro se as credenciais forem inválidas

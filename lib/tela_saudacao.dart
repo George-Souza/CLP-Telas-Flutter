@@ -1,4 +1,14 @@
 import 'package:flutter/material.dart';
+import 'package:oxebank2/tela_login.dart';
+import 'tela_login.dart';
+
+
+void main() {
+  String nomeUsuario = 'Leonardo';
+  double saldo = 100.50;
+
+  runApp(TelaSaudacao(nomeUsuario: nomeUsuario, saldo: saldo));
+}
 
 class TelaSaudacao extends StatelessWidget {
   final String nomeUsuario;
