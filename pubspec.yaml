@@ -61,6 +61,8 @@ flutter:
   # To add assets to your application, add an assets section, like this:
   assets:
     - assets/oxebanking_logo.png
+    - assets/cacto.png
+    - assets/lua.png
   #   - images/a_dot_burr.jpeg
   #   - images/a_dot_ham.jpeg
 
@@ -75,6 +77,12 @@ flutter:
   # "family" key with the font family name, and a "fonts" key with a
   # list giving the asset and other descriptors for the font. For
   # example:
+  fonts:
+    - family: FonteOxe
+      fonts:
+        - asset: assets/fonts/JollyLodger-Regular.ttf
+        - asset: assets/fonts/JollyLodger-Regular.ttf
+          weight: 700
   # fonts:
   #   - family: Schyler
   #     fonts:

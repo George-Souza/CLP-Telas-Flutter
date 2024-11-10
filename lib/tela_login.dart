@@ -23,7 +23,9 @@ class _Tela1State extends State<TelaLogin> {
       // Redirecionar para a Tela de Sucesso ou a Tela Principal
       Navigator.pushReplacement(
         context,
-        MaterialPageRoute(builder: (context) => TelaSaudacao(nomeUsuario: 'User', saldo: 2000.0)), // Substitua pela tela de sucesso
+        MaterialPageRoute(
+          builder: (context) => TelaSaudacao(nomeUsuario: 'User', saldo: 2000.0),
+        ),
       );
     } else {
       // Exibir um erro se as credenciais forem inválidas
@@ -51,7 +53,13 @@ class _Tela1State extends State<TelaLogin> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('ACESSE A PLATAFORMA, SE AVEXE NÃO!'),
+        title: Text(
+          'ACESSE A PLATAFORMA, SE AVEXE NÃO!',
+          style: TextStyle(
+            fontFamily: 'FonteOxe', // Nome da fonte definida no pubspec.yaml
+            fontSize: 20,
+          ),
+        ),
         centerTitle: true,
       ),
       body: SingleChildScrollView(
@@ -59,7 +67,7 @@ class _Tela1State extends State<TelaLogin> {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            Image.asset('assets/oxebanking_logo.png', width: 150, height: 150),
+            Image.asset('assets/cacto.png', width: 150, height: 150),
             SizedBox(height: 16),
             TextField(
               controller: _emailController,
